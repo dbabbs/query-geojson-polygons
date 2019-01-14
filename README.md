@@ -31,18 +31,30 @@ A valid App Id and App Code from the [HERE Developer Portal](https://developer.h
 
 #### Querying State of Washington feature
 ```
-{LOCAL-SERVER}/query?here_id={HERE-ID}&here_code={HERE-CODE}&location=Washington State&response_type=feature
+{LOCAL-SERVER}/query
+?here_id={HERE-ID}
+&here_code={HERE-CODE}
+&location=Washington State
+&response_type=feature
 ```
 #### Querying City of San Francisco geometry
 ```
-{LOCAL-SERVER}/query?here_id={HERE-ID}&here_code={HERE-CODE}&location=San Francisco,CA&response_type=geometry
+{LOCAL-SERVER}/query
+?here_id={HERE-ID}
+&here_code={HERE-CODE}
+&location=San Francisco,CA
+&response_type=geometry
 ```
 
 ### Querying State of Louisiana with the city name of New Orleans
 
 Since New Orleans is a city in the state of Louisiana, the API will return the polygon data for the state of New Orleans using using `admin_level=state`.
 ```
-{LOCAL-SERVER}/query?here_id={HERE-ID}&here_code={HERE-CODE}&location= New Orleans&admin_level=state
+{LOCAL-SERVER}/query
+?here_id={HERE-ID}
+&here_code={HERE-CODE}
+&location= New Orleans
+&admin_level=state
 ```
 
 ## Demo
