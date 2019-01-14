@@ -31,7 +31,7 @@ A valid App Id and App Code from the [HERE Developer Portal](https://developer.h
 
 #### Querying State of Washington feature
 ```
-{LOCAL-SERVER}/query?here_id=UQ75LhFcnAv0DtOUwBEA&here_code=f5nyezNmYF4wvuJqQgNSkg&location=Washington State&response_type=feature
+{LOCAL-SERVER}/query?here_id={HERE-ID}&here_code={HERE-CODE}&location=Washington State&response_type=feature
 ```
 #### Querying City of San Francisco geometry
 ```
