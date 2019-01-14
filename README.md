@@ -45,6 +45,29 @@ Since New Orleans is a city in the state of Louisiana, the API will return the p
 {LOCAL-SERVER}/query?here_id={HERE-ID}&here_code={HERE-CODE}&location= New Orleans&admin_level=state
 ```
 
+## Demo
+
+This repository includes a demo of the API to be used with Leaflet. Instructions for running the demo:
+
+Navigate to the demo directory
+```
+cd demo
+```
+Start a local server for the front end code.
+```
+python -m SimpleHTTPServer 8888
+```
+Navigate to `localhost:8888` or to the port you configured.
+
+Inside of `index.js`, be sure to insert your HERE Developer credentials into the `hereCredentials` object. These credentials authenticate the Map Tile API for Leaflet and the Polygon Query API.
+```
+const hereCredentials: {
+   id: '',
+   code: ''
+}
+```
+
+
 ## Data Usage
 
 When using data from this API, please comply with all terms listed on the [HERE Developer Portal FAQ](https://developer.here.com/faqs#licensing-terms).

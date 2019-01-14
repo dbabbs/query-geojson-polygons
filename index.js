@@ -22,6 +22,17 @@ Accepted Parameters:
 
 const geocode = (params) => `https://geocoder.api.here.com/6.2/geocode.json?app_id=${params.here_id}&app_code=${params.here_code}&searchtext=${params.location}&additionaldata=IncludeShapeLevel,${params.admin_level}`;
 
+
+const base = 'https://image.maps.api.here.com/mia/1.6/mapview?';
+const params = {
+	c: '19.4346%2C-99.1601', //Latitude, Longitude
+  t: 2, //Map style. 2 = terrain
+  app_id: 'UQ75LhFcnAv0DtOUwBEA',
+  app_code: 'f5nyezNmYF4wvuJqQgNSkg'
+}
+
+const url = base + Object.keys(params).map(key => key + '=' + params[key]).join('&');
+
 app.get('/query', (req, res) => {
    const params = {
       here_id: req.query.here_id || '',
