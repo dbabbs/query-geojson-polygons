@@ -16,7 +16,7 @@ Accepted Parameters:
  - here_id: HERE Developer Portal App Id. (String) [REQUIRED]
  - here_code: HERE Developer Portal App Code (String) [REQUIRED]
  - admin_level: Admin level for polygon data. (String) Options: country, state, county, city, district, postalCode
- - location: Preferred location of the polygon data (String)
+ - location: Preferred location of the polygon data (String) [REQUIRED]
  - response_type: Default geojson object. (String) Options: feature, feature_collection, geometry. Default: feature
 */
 
